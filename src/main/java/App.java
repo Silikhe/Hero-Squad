@@ -22,13 +22,13 @@ public class App {
         staticFileLocation("/public");
 
         get("/", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
+            Map<String, Object> model = new HashMap<>();
 
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/squads", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
+            Map<String, Object> model = new HashMap<>();
             ArrayList<Squad> foundSquad = Squad.getAll();
             model.put("squads",foundSquad);
 
