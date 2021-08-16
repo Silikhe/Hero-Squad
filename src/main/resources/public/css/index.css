@@ -1,126 +1,57 @@
+body{
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;
-500;
-700;
-900&display=swap');
- body {
-	 font-family: 'Rubik', sans-serif;
+.custom-nav{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    border: none;
+    list-style: none;
 }
- .btn {
-	 border: none;
-	 border-radius: 2px;
-	 padding: 8px 24px;
+
+#logo{
+    font-size: 36px;
+    font-weight: bold;
+    color: #E08C76;
 }
- .btn-primary {
-	 background-color: #fde015;
-	 color: #fff;
+
+.header-container-fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 170px;
+    padding-right: 170px;
+    margin-bottom: 100px;
 }
- .btn-primary:hover {
-	 background-color: #ddc202;
+
+a{
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: 400;
+    opacity: 70%;
 }
- .navbar-brand .brand-icon {
-	 width: 150px;
-	 display: inline-flex;
-	 justify-content: center;
-	 align-items: center;
+
+a:hover{
+    opacity: 100%;
 }
- .jumbotron {
-	 position: relative;
-	 overflow: hidden;
-	 padding-top: 100px;
-	 padding-bottom: 100px;
-	 border-radius: 0px;
-	 background-color: #fff;
+
+.page-header h1{
+    color: white;
+    margin-bottom: 100px;
+    text-align: center;
 }
- .jumbotron-background {
-	 position: absolute;
-	 left: 50%;
-	 bottom: 0%;
-	 margin: auto;
-	 z-index: -1;
-	 overflow: hidden;
-	 height: 3000px;
-	 width: 3000px;
-	 background-image: radial-gradient(#fde015, #f87e00);
-	 transform: translateX(-85%) rotate(15deg);
-	 z-index: 1;
-	 border-radius: 5000px;
-}
- .jumbotron .container {
-	 position: relative;
-	 z-index: 2;
-	 color: #212121;
-}
- .jumbotron-title {
-	 text-transform: uppercase;
-	 font-weight: 900;
-}
- .jumbotron-description {
-	 font-size: 16px;
-	 word-spacing: 2px;
-	 font-weight: 500;
-}
- .jumbotron .cta-btn {
-	 display: inline-flex;
-	 margin: 30px auto;
-	 text-decoration: none;
-	 padding: 16px 48px;
-	 color: #fde015;
-	 background-color: #212121;
-	 text-transform: uppercase;
-	 letter-spacing: 1px;
-}
- .jumbotron .cta-btn:hover {
-	 background-color: #080808;
-}
- .hero-image-container {
-	 height: 300px;
-	 width: 300px;
-	 display: inline-flex;
-	 justify-content: center;
-	 align-items: center;
-	 background-color: #fde015;
-	 border-radius: 500px;
-	 position: relative;
-}
- .hero-image-container::before, .hero-image-container::after {
-	 content: '';
-	 position: absolute;
-	 top: 0;
-	 bottom: 0;
-	 left: 0;
-	 right: 0;
-	 margin: auto;
-}
- .hero-image-container::before {
-	 height: calc(100% - 40px);
-	 width: calc(100% - 40px);
-	 border-radius: 500px;
-	 background-color: #f87e00;
-	 z-index: 1;
-	 background-image: radial-gradient(#fde015 50%, #f87e00);
-}
- .hero-image-container::after {
-	 height: calc(100% - 80px);
-	 width: calc(100% - 80px);
-	 border-radius: 500px;
-	 background-image: radial-gradient(#fde015 20%, #f87e00);
-	 z-index: 2;
-	 box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-}
- .hero-image-container img {
-	 max-height: 100%;
-	 position: relative;
-	 z-index: 3;
-}
- .credits {
-	 position: fixed;
-	 bottom: 0;
-	 left: 0;
-	 right: 0;
-	 margin: auto;
-	 text-align: center;
-	 background-color: #000;
-	 color: #fde015;
-	 padding: 8px auto;
+
+#content{
+    width: 100%;
+    background-color: white;
+    padding-top: 100px;
+    border-radius: 250px;
+    padding-left: 170px;
+    padding-right: 170px;
+    height: 700px;
 }
