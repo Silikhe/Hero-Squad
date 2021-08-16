@@ -3,18 +3,52 @@
 {{/partial}}
 
 {{#partial "content"}}
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="/images/justice-league.png" alt="justice-league">
-                <a href="/squads"><button class="btn btn-primary">Squads</button></a>
-            </div>
-            <div class="col-md-6">
-                <img src="/images/spider-man.png" alt="spider-man">
-                <a href="/heroes"><button class="btn btn-primary">Heroes</button></a>
+<div class="container text-center">
+  <div class="row">
+    <div class="col-6">
+     <div class="card" style="width: 18rem;">
+       <img class="card-img-top" src="/images/justice-league.png" alt="Card image cap">
+        <div class="card-body">
+         <h5 class="card-title">Card title</h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+         <a href="/squads" class="btn btn-primary">Squads</a>
+       </div>
+    </div>
+   <div class="col-6">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/images/spider-man.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="/heros" class="btn btn-primary">Add hero</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="/images/justice-league.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="/squads" class="btn btn-primary">Squads</a>
             </div>
         </div>
     </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="/images/spider-man.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="/heros" class="btn btn-primary">Add hero</a>
+            </div>
+        </div>
+    </div>
+</div>
 {{/partial}}
 
 {{> layout.hbs}}
