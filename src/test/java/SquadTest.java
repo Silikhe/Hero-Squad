@@ -6,14 +6,14 @@ import java.time.LocalDateTime;
 public class SquadTest {
     @Test
     public void instantiatesSquadCorrectly_true() {
-        Hero hero = new Hero("Eric", 26, "Super Coder", "Patience", "ForexTrader");
+        Hero hero = new Hero("Silas", 26, "Super Coder", "Patience", "ForexTrader");
         Squad squad = new Squad("Vikings", "Defeat spartans");
         assertEquals(true, squad instanceof Squad);
     }
 
     @Test
     public void succesFullyGetsHero_true() {
-        Hero hero = new Hero("Eric", 26, "Super Codeer", "Patience", "ForexTrader");
+        Hero hero = new Hero("Silas", 26, "Super Codeer", "Patience", "ForexTrader");
         Squad squad = new Squad("Vikings", "Defeat spartans");
         squad.getHeroes().add(hero);
         assertEquals(hero, squad.getHeroes().get(0));
@@ -21,17 +21,17 @@ public class SquadTest {
 
     @Test
     public void checksIfSquadCanAddHeroes_true() {
-        Hero eric = new Hero("Eric", 26, "Super Coder", "Patience", "ForexTrader");
+        Hero silas = new Hero("silas", 26, "Super Coder", "Patience", "ForexTrader");
         Hero brian = new Hero("Brian", 27, "Pilot", "Never broke", "Wings");
         Squad avengers = new Squad("Avengers", "Defeat Spartans");
-        avengers.setHeroes(eric);
+        avengers.setHeroes(silas);
         avengers.setHeroes(brian);
-        assertEquals(true, avengers.getHeroes().contains(eric));
+        assertEquals(true, avengers.getHeroes().contains(silas));
     }
 
     @Test
     public void checksIfSquadIsLimitedToAMaxOf5Heroes_true() {
-        Hero eric = new Hero("Eric", 26, "Super Coder", "Patience", "ForexTrader");
+        Hero silas = new Hero("Silas", 26, "Super Coder", "Patience", "ForexTrader");
         Hero brian = new Hero("Brian", 27, "Pilot", "Never broke", "Wings");
         Hero jeff = new Hero("Jeff", 28, "Android Engineer", "Never broke", "Money");
         Hero nic = new Hero("Nic", 24, "Web Developer", "Never broke", "BinaryGuy");
@@ -39,7 +39,7 @@ public class SquadTest {
         Hero goliath = new Hero("Goliath", 128, "Beast", "Never broke", "Beast");
 
         Squad avengers = new Squad("Avengers", "Defeat Spartans");
-        avengers.setHeroes(eric);
+        avengers.setHeroes(silas);
         avengers.setHeroes(brian);
         avengers.setHeroes(jeff);
         avengers.setHeroes(nic);
@@ -50,13 +50,13 @@ public class SquadTest {
 
     @Test
     public void checksIfHeroAppearsInOnlyOneSquadAtATime_true() {
-        Hero eric = new Hero("Eric", 26, "Super Coder", "Patience", "ForexTrader");
+        Hero silas = new Hero("Silas", 26, "Super Coder", "Patience", "ForexTrader");
         Hero brian = new Hero("Brian", 27, "Pilot", "Never broke", "Wings");
 
         Squad avengers = new Squad("Avengers", "Defeat Spartans");
         Squad justiceLeague = new Squad("Justice League", "Fight Crime");
-        avengers.setHeroes(eric);
-        justiceLeague.setHeroes(eric);
+        avengers.setHeroes(silas);
+        justiceLeague.setHeroes(silas);
         avengers.setHeroes(brian);
         assertEquals(false, avengers.doesHeroExist(brian));
     }
