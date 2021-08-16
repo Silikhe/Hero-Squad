@@ -15,13 +15,13 @@ public class HeroTest {
 
     @Test
     public void heroObjectIsCorrectlyCreated_true() {
-        Hero superHero = new Hero("Eric", 26, "Super Coder", "Patience", "ForexTraders");
+        Hero superHero = new Hero("Silas", 26, "Super Coder", "Patience", "ForexTraders");
         assertEquals(true, superHero instanceof Hero);
     }
 
     @Test
     public void allHeroesContainsAllHeroes_true() {
-        Hero superHero = new Hero("Eric", 26, "Super Coder", "My Patience", "ForexTraders");
+        Hero superHero = new Hero("Silas", 26, "Super Coder", "My Patience", "ForexTraders");
         Hero secondSuperHero = new Hero("Ilham", 21, "Super Wifie", "Patience", "Lawyers");
         assertEquals(true, Hero.getAll().contains(superHero));
         assertEquals(true, Hero.getAll().contains(secondSuperHero));
@@ -29,22 +29,22 @@ public class HeroTest {
 
     @Test
     public void getId_heroInstantiatesWithAnID_1() throws Exception {
-        Hero superHero = new Hero("Eric", 26, "Super Coder", "My Patience", "ForexTraders");
+        Hero superHero = new Hero("Silas", 26, "Super Coder", "My Patience", "ForexTraders");
         Hero secondSuperHero = new Hero("Ilham", 21, "Super Wifie", "Patience", "Lawyers");
         assertEquals(2, Hero.findById(secondSuperHero.getId()).getId());
     }
 
     @Test
     public void getPublished_isFalseAfterInstantiation_false() {
-        Hero eric = new Hero("Eric", 26, "Super Coder", "My Patience", "ForexTraders");
-        assertEquals(false, eric.getPublished());
+        Hero silas = new Hero("Silas", 26, "Super Coder", "My Patience", "ForexTraders");
+        assertEquals(false, silas.getPublished());
     }
 
     @Test
     public void delete_deleteASpecificHero() throws Exception{
-        Hero eric = setUpNewHero();
+        Hero silas = setUpNewHero();
         Hero ilham = new Hero("Ilham", 20, "Super wifie", "Patience", "Lawyers");
-        eric.deleteHero();
+        silas.deleteHero();
         assertEquals(1, Hero.getAll().size());
         assertEquals(Hero.getAll().get(0).getId(), 2);
     }
@@ -73,32 +73,32 @@ public class HeroTest {
 
     @Test
     public void squad_correctlyInstantiatesSquadObject(){
-        Hero eric = setUpNewHero();
+        Hero silas = setUpNewHero();
         Squad avengers = setUpNewSquad();
         assertEquals(true, avengers instanceof Squad);
     }
 
     @Test
     public void squad_ensuresHeroChoosesASquad(){
-        Hero eric = setUpNewHero();
+        Hero silas = setUpNewHero();
         Squad avengers = setUpNewSquad();
         boolean exists = false;
         for(Hero hero: avengers.getHeroes()){
-            if (avengers.doesHeroExist(eric)){
+            if (avengers.doesHeroExist(silas)){
                 System.out.println(hero + "exists");
                 exists = true;
             }
         }
 
         if(!exists){
-            avengers.getHeroes().add(eric);
+            avengers.getHeroes().add(silas);
         }
         
-        assertEquals(eric, avengers.getHeroes().get(0));
+        assertEquals(silas, avengers.getHeroes().get(0));
     }
 
     private Hero setUpNewHero(){
-        return new Hero("Eric", 26, "Super Coder", "My Patience", "ForexTraders");
+        return new Hero("Silas", 26, "Super Coder", "My Patience", "ForexTraders");
     }
 
     private Squad setUpNewSquad(){

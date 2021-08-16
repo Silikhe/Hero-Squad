@@ -1,5 +1,5 @@
 # Hero Squad
-#### An app that let's you build a team of super heroes, 06/07/2021
+#### An app that let you build a team of heroes, 06/07/2021
 #### By **Silas Silikhe**
 ## Description
 An app that allows you to recruit a well-balanced team of superheroes (or any other character-type of your choosing).
