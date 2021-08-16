@@ -55,3 +55,35 @@ a:hover{
     padding-right: 170px;
     height: 700px;
 }
+
+.bg-black {
+  background-color: #000000;
+}
+
+.jumbotron{
+height: 100%
+  margin: 50px 50px 50px 50px !important;
+  box-shadow: 10px 10px 5px #888888;
+  background: #fff;
+}
+h1{
+  font-family: tahoma;
+  color:#2980b9;
+  text-align: center;
+}
+hr{
+  width: 5%;
+  border: 1px solid black;
+  margin-bottom:60px;
+}
+
+p{
+  font-size: 19.5px;
+  text-align: justify;
+}
+
+.img-circle{
+  border: 4px solid #2980b9;
+  border-radius:100%;
+  margin-top: -260px;
+}
