@@ -14,7 +14,7 @@
     <p id="logo">Heroes Squad</p>
     <ul class="custom-nav">
         <li role="presentation" class="active"><a href="/">Home</a></li>
-        <li role="presentation"><a href="/list">All Squads</a></li>
+        <li role="presentation"><a href="/squads/list">All Squads</a></li>
         <li role="presentation"><a href="/squads">New Squad</a></li>
         <li role="presentation"><a href="/heroes">New Hero</a></li>
     </ul>
@@ -36,7 +36,7 @@
         <a class="nav-link" role="presentation" href="/squads/list" href="#">All Squads</a>
       </li>
       <li class="nav-item">
-              <a class="nav-link" role="presentation" href="/squads" href="#">New Squads</a>
+              <a class="nav-link" role="presentation" href="/squads/squads" href="#">New Squads</a>
       </li>
   <li class="nav-item">
               <a class="nav-link" role="presentation" href="/heroes" href="#">New Hero</a>
@@ -46,28 +46,27 @@
 </nav>
 <div class="container-fluid">
     <!--begin main template-->
-   <div class="col-xs-12 jumbotron p-3 rounded-3 text-center">
+   <div class="col-xs-12 jumbotron p-5 rounded-3 text-center">
        <h1>Hero Squad!</h1>
       <hr/>
       <div class="row">
         <div class="col-md-6 text-center">
-            <img src="https://www.allmystery.de/i/t251e55_2sqRkNr.png" class="img-jumbotron" alt="img1"/>
+            <img src="https://www.allmystery.de/i/t251e55_2sqRkNr.png" alt="img1"/>
           <img src="https://www.hq.nasa.gov/alsj/Apollo_NASA_Buxton.png" class="img-responsive img-circle" width="15%" alt="nasaImg" />
         </div>
-         <div class="col-md-6 t-2 text-center">
+         <div class="col-md-6 text-center">
             <p>An app that allows you to recruit a well-balanced team of superheroes (or any other character-type of your choosing). <a href="https://github.com/silikhe" target="_blank" class="btn btn-primary btn-block" role="button">Learn More</a>
-            </p>
+   </p>
         </div>
       </div>
-
     </div>
+
+
     <div class="col-md-12" id="content">
         {{#block "content"}}
         {{/block}}
 
     </div>
-
-
 </div>
 <!--end main template-->
 {{#block "footer"}}
