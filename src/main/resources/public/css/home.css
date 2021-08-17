@@ -4,5 +4,10 @@
 }
 
 .card-img-top{
-ob
+object-fit: cover;
+height: 350px;
+}
+
+.card p{
+font-size: 15px;
 }
