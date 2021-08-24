@@ -4,12 +4,20 @@
 
 
 {{#partial "content"}}
+    <div class="container mx-auto">
+        <div class="card mb-3" style="width: 18rem;">
 
-    <h5>You new {{squad}} was added</h5>
-    <p>Nice cause</p>
-    <p>I like u your {{cause}}</p>
-    <p><a href="/squads/list">View More</a> about the team</p>
+            <div class="card-body">
+                <h1 class="card-title text-center">SUCCESS!</h1>
+                <p class="text-center">New squad -> <strong>{{name}} was added</strong></p>
+            </div>
 
+            <h4 class="text-center"> <strong>Cause: </strong> {{cause}}</h4>
+        </div>
+        <div class="text-center mb-3">
+            <a href="/squads/list"><button class="btn btn-primary">View All</button></a>
+        </div>
+    </div>
 {{/partial}}
 
 {{> layout.hbs}}

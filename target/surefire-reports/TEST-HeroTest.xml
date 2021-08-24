@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="HeroTest" time="0.029" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="HeroTest" time="0.027" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="13.0.7+5-Ubuntu-0ubuntu120.04"/>
@@ -55,12 +55,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="HeroTest" name="squad_ensuresHeroChoosesASquad" time="0.029"/>
+  <testcase classname="HeroTest" name="squad_ensuresHeroChoosesASquad" time="0.022"/>
   <testcase classname="HeroTest" name="updateChangesHeroContent" time="0"/>
   <testcase classname="HeroTest" name="squad_correctlyInstantiatesSquadObject" time="0"/>
   <testcase classname="HeroTest" name="heroObjectIsCorrectlyCreated_true" time="0"/>
   <testcase classname="HeroTest" name="getPublished_isFalseAfterInstantiation_false" time="0"/>
   <testcase classname="HeroTest" name="allHeroesContainsAllHeroes_true" time="0"/>
   <testcase classname="HeroTest" name="delete_deleteASpecificHero" time="0"/>
-  <testcase classname="HeroTest" name="getId_heroInstantiatesWithAnID_1" time="0"/>
+  <testcase classname="HeroTest" name="getId_heroInstantiatesWithAnID_1" time="0.005"/>
 </testsuite>
