@@ -2,3 +2,16 @@
     background-color: #06038F !important;
     height: 200px !important;
 }
+
+.card-img-top{
+object-fit: cover;
+height: 350px;
+}
+
+.card p{
+font-size: 15px;
+}
+
+.t-2{
+font-size: 12px
+}

@@ -92,3 +92,12 @@ p{
 height: 300px
 object-fit: center;
 }
+
+.img-jumbotron{
+  height: 100px;
+  object-fit: center;
+}
+
+.t-2{
+font-size: 12px
+}

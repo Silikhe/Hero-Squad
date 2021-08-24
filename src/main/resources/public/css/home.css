@@ -1,3 +1,9 @@
+*{
+padding: 0;
+margin: 0;
+font-family: "Montserrat", sans-serif;
+}
+
 .btn-primary{
     background-color: #06038F !important;
     height: 200px !important;
@@ -15,3 +21,4 @@ font-size: 15px;
 .t-2{
 font-size: 12px
 }
+
